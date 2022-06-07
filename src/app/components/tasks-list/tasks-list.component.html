@@ -1,7 +1,10 @@
 <div class="mt-3">
   <ul class="list-group">
     <li class="list-group-item" *ngFor="let task of tasks; let n = index">
-      <b>{{ n + 1 }}. {{ task.text }}.</b> Užduoties tipas: {{ task.type }}
+      <b>{{ n + 1 }}. {{ task.name }}.</b> Užduoties tipas: {{ task.type }}
+      <button class="btn btn-danger float-end" (click)="deleteTask(n)">
+        X
+      </button>
     </li>
   </ul>
 </div>
