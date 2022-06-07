@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { TasksListComponent } from './components/tasks-list/tasks-list.component';
+import { NewTaskComponent } from './components/new-task/new-task.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, TasksListComponent],
-  imports: [BrowserModule],
+  declarations: [AppComponent, TasksListComponent, NewTaskComponent],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
