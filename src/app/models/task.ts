@@ -1,3 +1,3 @@
 export class Task {
-  constructor(public text: string, public type: string) {}
+  constructor(public name: string, public type: string) {}
 }
