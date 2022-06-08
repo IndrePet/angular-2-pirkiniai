@@ -32,4 +32,10 @@ export class TasksService {
   public saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
+
+  public updateTask(index: number, name: string, type: string) {
+    this.tasks[index].name = name;
+    this.tasks[index].type = type;
+    this.saveTasks();
+  }
 }

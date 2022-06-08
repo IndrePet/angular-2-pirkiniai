@@ -8,6 +8,9 @@
           <button class="btn btn-danger float-end" (click)="deleteTask(n)">
             X
           </button>
+          <a [routerLink]="['update', n]" class="btn btn-info float-end me-2"
+            >Redaguoti</a
+          >
         </li>
       </ul>
     </div>

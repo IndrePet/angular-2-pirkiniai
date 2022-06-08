@@ -9,11 +9,13 @@ import { TaskTypeStatsComponent } from './components/task-type-stats/task-type-s
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { AboutComponent } from './components/about/about.component';
 import { RouterModule, Routes } from '@angular/router';
+import { UpdateTaskComponent } from './components/update-task/update-task.component';
 
 const appRoutes: Routes = [
   { path: '', component: TasksListComponent },
   { path: 'new', component: NewTaskComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'update/:taskNumber', component: UpdateTaskComponent },
 ];
 
 @NgModule({
@@ -24,6 +26,7 @@ const appRoutes: Routes = [
     TaskTypeStatsComponent,
     NavigationComponent,
     AboutComponent,
+    UpdateTaskComponent,
   ],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes)],
   providers: [],
