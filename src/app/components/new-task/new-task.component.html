@@ -1,18 +1,23 @@
-<div class="mb-3">
-  <label for="" class="form-label">Užduotis: </label>
-  <input type="text" class="form-control" [(ngModel)]="taskName" />
+<div class="card">
+  <div class="card-header">Pridėti užduotį</div>
+  <div class="card-body">
+    <div class="mb-3">
+      <label for="" class="form-label">Užduotis: </label>
+      <input type="text" class="form-control" [(ngModel)]="taskName" />
+    </div>
+    <div class="mb-3">
+      <select
+        class="form-select"
+        aria-label="task type selection"
+        [(ngModel)]="taskType"
+      >
+        <option selected>Pasirinkite užduoties tipą</option>
+        <option value="Skubus">Skubus</option>
+        <option value="Rutininis">Rutininis</option>
+        <option value="Neskubus">Neskubus</option>
+        <option value="Ypač skubus">Ypač skubus</option>
+      </select>
+    </div>
+    <button class="btn btn-success" (click)="addTask()">Pridėti</button>
+  </div>
 </div>
-<div class="mb-3">
-  <select
-    class="form-select"
-    aria-label="task type selection"
-    [(ngModel)]="taskType"
-  >
-    <option selected>Pasirinkite užduoties tipą</option>
-    <option value="Skubus">Skubus</option>
-    <option value="Rutininis">Rutininis</option>
-    <option value="Neskubus">Neskubus</option>
-    <option value="Ypač skubus">Ypač skubus</option>
-  </select>
-</div>
-<button class="btn btn-success" (click)="addTask()">Pridėti</button>

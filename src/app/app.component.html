@@ -1,14 +1,8 @@
 <div class="container">
+  <app-navigation></app-navigation>
   <div class="row mt-5">
     <div class="col-s">
-      <div class="card">
-        <div class="card-header">Užduočių sąrašas</div>
-        <div class="card-body">
-          <app-new-task></app-new-task>
-          <app-task-type-stats></app-task-type-stats>
-          <app-tasks-list></app-tasks-list>
-        </div>
-      </div>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
